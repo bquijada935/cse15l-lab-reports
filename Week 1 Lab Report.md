@@ -8,13 +8,15 @@ Week 1 Lab Report: Logging into a course-specific account on ieng6
   * 
   * 
   * 
+![Image](Installing_VScode_Screenshot.png)
 
 
-(Step 2): Remotely CConnecting
+(Step 2): Remotely Connecting
 
   * 
   * 
   * 
+ ![Image](Remotely_Connecting_Screenshot.png)
  
 
 (Step 3): Trying Some Commands
@@ -22,4 +24,5 @@ Week 1 Lab Report: Logging into a course-specific account on ieng6
   * 
   * 
   * 
+![Image](Trying_Some_Commands_Screenshot.png)
 
