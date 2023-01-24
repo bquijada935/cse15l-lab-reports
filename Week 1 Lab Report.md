@@ -5,7 +5,7 @@ Week 1 Lab Report: Logging into a course-specific account on ieng6
 
 (Step 1): Installing VScode 
 
-  * First, go to the Visual Studio Code website: [Link](https://code.visualstudio.com/)
+  * First, go to the Visual Studio Code website: [https://code.visualstudio.com/](https://code.visualstudio.com/)
   * Then, download and install the version of Visual Studio Code that is applicable to your device 
   * Finally, after Visual Studio Code is installed, you will be able to open it and will look similar to the image below:
   * ![Image](Installing_VScode_Screenshot.png)
