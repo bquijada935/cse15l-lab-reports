@@ -13,7 +13,7 @@ Week 1 Lab Report: Logging into a course-specific account on ieng6
 
 (Step 2): Remotely Connecting
 
-  * First, open a terminal in Visual Studio Code and type the command: `ssh cs15lwi23zz@ieng6.ucsd.edu` (replace 'zz' with the letters of your course specific account)
+  * First, open a terminal in Visual Studio Code and type the command `ssh cs15lwi23zz@ieng6.ucsd.edu` (replace 'zz' with the letters of your course specific account)
   * Then, type yes if you get a message saying, "Are you sure you want to continue connecting (yes/no/[fingerprint])?"
   * Finally, type your password to complete the login process; the end result should look similar to the image below:
   * ![Image](Remotely_Connecting_Screenshot.png)
