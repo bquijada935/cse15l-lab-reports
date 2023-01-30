@@ -3,7 +3,7 @@
 
 ## Part 1
 
-*Code from Simplest Search Engine from week 2:*
+*Code from Simplest Search Engine from week 2 (SearchEngine.java):*
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 class Handler implements URLHandler {
     
-    int num = 0;
     ArrayList <String> listOfStrings = new ArrayList<>();
 
     public String returnListOfStrings(ArrayList<String> stringList) {
@@ -75,59 +74,68 @@ class SearchEngine {
 
 *Screenshot 1:*
 
-[Image]
+![Image](add_apple.png)
 
   * Which methods in your code are called:
     
-    * 
+    * For the first screenshot, the methods that are called are `main` and `handleRequest`.
   
   
   * What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class:
     
-    * 
+    * The relevant arguments to those methods are urls. Other values that are relevant fields of the class are 
+the global variable `listOfStrings` and the line of code `Server.start(port, new Handler());` which calls the
+Server.java file.
   
   
   * If those values change, how they change by the time the request is done processing:
     
-    * 
+    * If the url value changed, one of four outcomes would occur either a print out a list of all of the strings 
+that are stored in the `listOfStrings` variable, a string would be added into the `listOfStrings` variable, a print out of a list of all of the strings in the `listOfStrings` variable that have a given substring, or a print out of a string saying `"404 Not Found!"`.
   
   
 *Screenshot 2:*
 
-[Image]
+![Image](add_pear.png)
   
   * Which methods in your code are called:
     
-    * 
+    * For the second screenshot, the methods that are called are `main` and `handleRequest`.
   
   
   * What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class:
     
-    * 
+    * The relevant arguments to those methods are urls. Other values that are relevant fields of the class are 
+the global variable `listOfStrings` and the line of code `Server.start(port, new Handler());` which calls the
+Server.java file.
   
   
   * If those values change, how they change by the time the request is done processing:
     
-    * 
+    * If the url value changed, one of four outcomes would occur either a print out a list of all of the strings 
+that are stored in the `listOfStrings` variable, a string would be added into the `listOfStrings` variable, a print out of a list of all of the strings in the `listOfStrings` variable that have a given substring, or a print out of a string saying `"404 Not Found!"`.
   
   
 *Screenshot 3:*
 
-[Image]
+![Image](search_app.png)
 
   * Which methods in your code are called:
     
-    * 
+    * For the third screenshot, the methods that are called are `main`, `handleRequest`, and 
+`returnListContainingSubString`.
   
   
   * What the values of the relevant arguments to those methods are, and the values of any relevant fields of the class:
     
-    * 
+    * The relevant arguments to those methods are urls. Other values that are relevant fields of the class are 
+the global variable `listOfStrings`, the method `returnListContainingSubString`, and the line of code `Server.start(port, new Handler());` which calls the Server.java file.
   
   
   * If those values change, how they change by the time the request is done processing:
     
-    * 
+    * If the url value changed, one of four outcomes would occur either a print out a list of all of the strings 
+that are stored in the `listOfStrings` variable, a string would be added into the `listOfStrings` variable, a print out of a list of all of the strings in the `listOfStrings` variable that have a given substring, or a print out of a string saying `"404 Not Found!"`.
   
   
 ## Part 2
