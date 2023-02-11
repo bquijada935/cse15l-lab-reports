@@ -141,8 +141,8 @@ that are stored in the `listOfStrings` variable, a string would be added into th
 ## Part 2
 
   *Bug 1 (ArrayExamples.java):*
-  * The failure-inducing input: 
-  
+  * *The failure-inducing input:* 
+
 ```
 @Test
   public void test2Reversed() {
@@ -151,7 +151,17 @@ that are stored in the `listOfStrings` variable, a string would be added into th
     assertArrayEquals(new int[]{ 34, 12, 5 }, ArrayExamples.reversed(input1));
   }
 ```
-      
+
+  * *Input that does not include failure:* 
+
+```
+@Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+
   * *The symptom:*
   
 ```
@@ -207,7 +217,23 @@ to the input array instead of assigning elements from the input array to the new
         mergedList.add("list2");
         assertEquals(mergedList, ListExamples.merge(list1, list2));
 ```
-      
+
+  * *Input that does not include failure:* 
+
+```
+    @Test
+    public void testMerge2() {
+        ArrayList<String> list1 = new ArrayList<String>();
+        ArrayList<String> list2 = new ArrayList<String>();
+        ArrayList<String> mergedList = new ArrayList<String>();
+        list1.add("list");
+        list2.add("list");
+        mergedList.add("list");
+        mergedList.add("list");
+        assertEquals(mergedList, ListExamples.merge(list1, list2));
+    }
+```
+
   * *The symptom:* 
   
 ```
@@ -283,3 +309,7 @@ java.lang.OutOfMemoryError: Java heap space
       * The bug causes this particular symptom for that particular input because the code with the bug was 
 incrementing the wrong index. Specifically, in the last while-loop, the code with the bug was incrementing 
 index1 instead of incrementing index2.
+
+## Part 3
+
+   * Something I learned from lab in week 2 that I did not know before was how to make a webserver. This was the first time I have made a webserver. I initially thought that making a webserver was an advanced topic for computer science and would be taught in upper division courses.
